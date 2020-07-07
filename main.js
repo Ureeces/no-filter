@@ -2,6 +2,7 @@
  * YOUR CODE HERE *
  ******************/
  const onlyOdds = function(numbers) {
+  // No filter method
   const odds = [];
 
   for(let num of numbers) {
@@ -11,10 +12,13 @@
     }
   }
 
-  return odds;
+  // Using filter method
+  const odds2 = numbers.filter(num => num % 2 !== 0);
+  return odds2;
 }
 
 const onlyEvens = function(numbers) {
+  // No filter method
   const evens = [];
 
   for(let num of numbers) {
@@ -24,10 +28,13 @@ const onlyEvens = function(numbers) {
     }
   }
 
-  return evens;
+  // Using filter method
+  const evens2 = numbers.filter(num => num % 2 === 0);
+  return evens2;
 }
 
 const shortNamesOnly = function(names) {
+  // No filter method
   const shortNames = [];
 
   for(let name of names) {
@@ -36,10 +43,13 @@ const shortNamesOnly = function(names) {
     }
   }
 
-  return shortNames;
+  // Using filter method
+  const shortNames2 = names.filter(name => name.length < 7);
+  return shortNames2;
 }
 
 const dNames = function(names) {
+  // No filter method
   const dNS = [];
 
   for(let name of names) {
@@ -49,12 +59,10 @@ const dNames = function(names) {
     }
   }
 
-  return dNS;
+  // Using filter method
+  const dNS2 = names.filter(name => name[0].toLowerCase() === "d");
+  return dNS2;
 }
-
-
-
-
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
